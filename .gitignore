@@ -27,12 +27,15 @@
 *.lib
 
 # Executables
+bin
 *.exe
 *.out
 *.app
 
 # Ignore cocos files
-bin*
 proj.*
 *cocos*
 *-build
+
+# Ignore system files
+.DS_Store
