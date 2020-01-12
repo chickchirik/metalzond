@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Ignore cocos files
+bin*
+proj.*
+*cocos*
+*-build
