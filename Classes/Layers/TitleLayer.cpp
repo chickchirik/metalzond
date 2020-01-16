@@ -22,5 +22,8 @@ bool TitleLayer::init() {
     auto director = Director::getInstance();
     auto visibleSize = director->getVisibleSize();
     Vec2 origin = director->getVisibleOrigin();
+    auto titleSprite = Sprite::create("chickchirikMobileLogo.png");
+    titleSprite->setPosition(Vec2(visibleSize.width / 2, visibleSize.height / 2));
+    this->addChild(titleSprite);
     return true;
 }
