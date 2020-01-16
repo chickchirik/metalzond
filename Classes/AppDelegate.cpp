@@ -33,7 +33,7 @@ using namespace cocos2d::experimental;
 
 USING_NS_CC;
 
-static cocos2d::Size designResolutionSize = cocos2d::Size(489, 720);
+static cocos2d::Size designResolutionSize = cocos2d::Size(480, 720);
 
 AppDelegate::AppDelegate() {}
 
