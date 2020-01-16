@@ -26,7 +26,7 @@
 #define  _APP_DELEGATE_H_
 
 #include "cocos2d.h"
-#include "Layers/GameLayer.hpp"
+#include "Layers/TitleLayer.hpp"
 
 /**
 @brief    The cocos2d Application.
