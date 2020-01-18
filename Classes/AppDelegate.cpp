@@ -34,6 +34,9 @@ using namespace cocos2d::experimental;
 USING_NS_CC;
 
 static cocos2d::Size designResolutionSize = cocos2d::Size(640, 1036);
+static cocos2d::Size smallResolutionSize = cocos2d::Size(512, 384);
+static cocos2d::Size mediumResolutionSize = cocos2d::Size(1024, 768);
+static cocos2d::Size largeResolutionSize = cocos2d::Size(2048, 1536);
 
 AppDelegate::AppDelegate() {}
 
@@ -54,6 +57,7 @@ static int register_all_packages() {
 }
 
 bool AppDelegate::applicationDidFinishLaunching() {
+    register_all_packages();
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
@@ -67,7 +71,19 @@ bool AppDelegate::applicationDidFinishLaunching() {
     director->setDisplayStats(true);
     director->setAnimationInterval(1.0f / 60);
     glview->setDesignResolutionSize(designResolutionSize.width, designResolutionSize.height, ResolutionPolicy::NO_BORDER);
-    register_all_packages();
+    Size frameSize = glview->getFrameSize();
+    float scaleFactor = 1.0f;
+    if (frameSize.height > mediumResolutionSize.height) {
+        FileUtils::getInstance()->setSearchPaths({"res/HDR"});
+        scaleFactor = largeResolutionSize.height/designResolutionSize.height;
+    } else if (frameSize.height > smallResolutionSize.height) {
+        FileUtils::getInstance()->setSearchPaths({"res/HD"});
+        scaleFactor = mediumResolutionSize.height/designResolutionSize.height;
+    } else {
+        FileUtils::getInstance()->setSearchPaths({"res/SD"});
+        scaleFactor = smallResolutionSize.height/designResolutionSize.height;
+    }
+    director->setContentScaleFactor(scaleFactor);
     auto scene = TitleLayer::createScene();
     director->runWithScene(scene);
     return true;
