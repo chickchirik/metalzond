@@ -11,9 +11,12 @@
 #include "Layers/GameLayer.hpp"
 
 Scene* GameLayer::createScene() {
-    auto scene = Scene::create();
+    auto scene = Scene::createWithPhysics();
     auto layer = GameLayer::create();
     scene->addChild(layer);
+    PhysicsWorld* world = scene->getPhysicsWorld();
+    world->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
+    world->setGravity(Vec2(0, -16.2f));
     return scene;
 }
 
