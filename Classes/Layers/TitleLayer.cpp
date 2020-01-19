@@ -27,3 +27,12 @@ bool TitleLayer::init() {
     this->addChild(titleSprite);
     return true;
 }
+
+void TitleLayer::onEnterTransitionDidFinish() {
+    // game assets here loading will be here
+    this->scheduleOnce([&](float d){
+        auto nextScene  = GameLayer::createScene();
+        auto transition = TransitionFade::create(1.0f, nextScene);
+        Director::getInstance()->replaceScene(transition);
+    }, 0.5f, "TitleToGameTransition");
+}

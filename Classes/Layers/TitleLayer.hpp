@@ -11,6 +11,7 @@
 #pragma once
 
 #include "cocos2d.h"
+#include "Layers/GameLayer.hpp"
 
 USING_NS_CC;
 
@@ -19,4 +20,5 @@ public:
     static Scene* createScene();
     CREATE_FUNC(TitleLayer);
     virtual bool init();
+    virtual void onEnterTransitionDidFinish();
 };
