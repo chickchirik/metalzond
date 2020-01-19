@@ -25,5 +25,12 @@ bool GameLayer::init() {
     auto director = Director::getInstance();
     auto visibleSize = director->getVisibleSize();
     Vec2 origin = director->getVisibleOrigin();
+    
+    player = new Player(visibleSize);
+    this->addChild(player->getSprite());
+    //freeing memoray allocated for the player object
+    this->setOnExitCallback([&](){
+        delete player;
+    });
     return true;
 }
