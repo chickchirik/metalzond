@@ -15,7 +15,9 @@
 USING_NS_CC;
 
 class Player {
+private:
+    Sprite* playerSprite = nullptr;
 public:
-    Player();
+    Player(Size visibleSize);
     ~Player();
 };
