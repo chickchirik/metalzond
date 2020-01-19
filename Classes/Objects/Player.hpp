@@ -20,4 +20,5 @@ private:
 public:
     Player(Size visibleSize);
     ~Player();
+    inline Sprite* getSprite() { return playerSprite; }
 };
