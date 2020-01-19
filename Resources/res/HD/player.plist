@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>fly/metalzondFly.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{199,225}</string>
+                <key>spriteSourceSize</key>
+                <string>{199,225}</string>
+                <key>textureRect</key>
+                <string>{{1,1},{199,225}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>11 12 13 0 11 13 10 11 1 6 9 10 9 6 7 9 7 8 6 1 5 2 3 4 2 4 5 1 2 5 11 0 1 10 1 6</string>
+                <key>vertices</key>
+                <string>133 9 172 61 199 193 199 225 134 225 122 156 75 155 62 225 0 225 0 192 18 74 68 5 76 0 120 0</string>
+                <key>verticesUV</key>
+                <string>134 10 173 62 200 194 200 226 135 226 123 157 76 156 63 226 1 226 1 193 19 75 69 6 77 1 121 1</string>
+            </dict>
+            <key>jetFire/jetFireLeft.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{63,63}</string>
+                <key>spriteSourceSize</key>
+                <string>{63,63}</string>
+                <key>textureRect</key>
+                <string>{{63,378},{63,63}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>0 4 5 2 3 4 0 2 4 0 1 2</string>
+                <key>vertices</key>
+                <string>63 63 0 63 0 28 11 2 17 0 63 0</string>
+                <key>verticesUV</key>
+                <string>126 441 63 441 63 406 74 380 80 378 126 378</string>
+            </dict>
+            <key>jetFire/jetFireRight.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{63,63}</string>
+                <key>spriteSourceSize</key>
+                <string>{63,63}</string>
+                <key>textureRect</key>
+                <string>{{128,402},{63,63}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>2 4 5 2 3 4 0 2 5 0 1 2</string>
+                <key>vertices</key>
+                <string>63 63 0 63 0 24 5 8 12 0 63 0</string>
+                <key>verticesUV</key>
+                <string>191 465 128 465 128 426 133 410 140 402 191 402</string>
+            </dict>
+            <key>still/metalzond.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{185,181}</string>
+                <key>spriteSourceSize</key>
+                <string>{185,181}</string>
+                <key>textureRect</key>
+                <string>{{7,219},{185,181}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>0 13 14 0 12 13 0 11 12 6 10 11 6 9 10 7 8 9 6 7 9 6 1 5 2 3 4 2 4 5 1 2 5 11 0 1 11 1 6</string>
+                <key>vertices</key>
+                <string>126 9 165 61 185 159 185 181 127 181 125 157 67 154 55 181 0 181 0 162 6 113 25 54 61 4 69 0 113 0</string>
+                <key>verticesUV</key>
+                <string>133 228 172 280 192 378 192 400 134 400 132 376 74 373 62 400 7 400 7 381 13 332 32 273 68 223 76 219 120 219</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>3</integer>
+            <key>pixelFormat</key>
+            <string>RGBA8888</string>
+            <key>premultiplyAlpha</key>
+            <false/>
+            <key>realTextureFileName</key>
+            <string>player.png</string>
+            <key>size</key>
+            <string>{201,466}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:f215283cf48cfebc1d2a11f22064b9e9:56c00e692350b63f8c7c306aab03578e:edc07151e736b0732633ae99adf9ba18$</string>
+            <key>textureFileName</key>
+            <string>player.png</string>
+        </dict>
+    </dict>
+</plist>
