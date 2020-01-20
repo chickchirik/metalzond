@@ -18,7 +18,7 @@ class Player {
 private:
     Sprite* playerSprite = nullptr;
 public:
-    Player(Size visibleSize);
+    Player(cocos2d::Size visibleSize);
     ~Player();
     inline Sprite* getSprite() { return playerSprite; }
 };

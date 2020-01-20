@@ -10,7 +10,7 @@
 
 #include "Player.hpp"
 
-Player::Player(Size visibleSize)  {
+Player::Player(cocos2d::Size visibleSize)  {
     auto spriteCache = SpriteFrameCache::getInstance();
     spriteCache->addSpriteFramesWithFile("player.plist");
     auto playerStillFrame = spriteCache->getSpriteFrameByName("still/metalzond.png");
