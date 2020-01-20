@@ -18,6 +18,7 @@ Player::Player(cocos2d::Size visibleSize)  {
 
     auto playerSize = playerSprite->getContentSize();
     playerSprite->setPosition(Vec2(visibleSize.width / 2, visibleSize.height - playerSize.height));
+    playerSprite->setScale(0.5);
     auto physicsBody = PhysicsBody::createCircle(playerSize.width / 2);
     physicsBody->setDynamic(true);
     playerSprite->setPhysicsBody(physicsBody);
