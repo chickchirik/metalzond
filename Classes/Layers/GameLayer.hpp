@@ -12,6 +12,7 @@
 
 #include "cocos2d.h"
 #include "Objects/Player.hpp"
+#include "PhysicsShapeCache.h"
 
 USING_NS_CC;
 
