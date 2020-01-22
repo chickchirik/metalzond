@@ -22,4 +22,5 @@ public:
     Player(cocos2d::Size visibleSize);
     ~Player();
     inline Sprite* getSprite() { return playerSprite; }
+    void fireJet(const Vec2& touchLocation);
 };
