@@ -23,4 +23,6 @@ public:
     static Scene* createScene();
     CREATE_FUNC(GameLayer);
     virtual bool init();
+    virtual bool onTouchBegan(Touch *touch, Event *event);
+    virtual void onTouchEnded(Touch *touch, Event *event);
 };

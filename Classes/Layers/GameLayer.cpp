@@ -43,5 +43,19 @@ bool GameLayer::init() {
     this->setOnExitCallback([&](){
         delete player;
     });
+
+    auto listener = EventListenerTouchOneByOne::create();
+    listener->setSwallowTouches(true);
+    listener->onTouchBegan = CC_CALLBACK_2(GameLayer::onTouchBegan, this);
+    listener->onTouchEnded = CC_CALLBACK_2(GameLayer::onTouchEnded, this);
+    this->_eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
+    this->scheduleUpdate();
     return true;
+}
+
+bool GameLayer::onTouchBegan(Touch *touch, Event *event) {
+    return true;
+}
+
+void GameLayer::onTouchEnded(Touch *touch, Event *event) {
 }
