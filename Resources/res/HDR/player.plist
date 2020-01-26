@@ -4,28 +4,70 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>fly/metalzondFly.png</key>
+            <key>angryFace.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
                 <key>spriteOffset</key>
-                <string>{0,0}</string>
+                <string>{-2,9}</string>
                 <key>spriteSize</key>
-                <string>{397,449}</string>
+                <string>{116,55}</string>
                 <key>spriteSourceSize</key>
-                <string>{397,449}</string>
+                <string>{120,107}</string>
                 <key>textureRect</key>
-                <string>{{1,1},{397,449}}</string>
+                <string>{{120,342},{116,55}}</string>
                 <key>textureRotated</key>
                 <false/>
                 <key>triangles</key>
-                <string>24 26 27 24 25 26 0 24 27 10 24 0 10 22 23 11 22 10 20 18 19 20 21 11 15 16 17 15 17 18 12 13 14 12 14 15 11 12 15 20 11 15 20 15 18 11 21 22 0 9 10 7 5 6 7 8 5 1 5 8 5 2 4 5 1 2 1 8 9 4 2 3 0 1 9 10 23 24</string>
+                <string>1 2 3 0 1 3 4 5 6 7 8 9</string>
                 <key>vertices</key>
-                <string>349 142 384 345 397 389 397 449 326 449 297 435 283 449 269 449 262 395 271 310 140 303 101 315 134 367 122 449 110 448 83 429 67 449 54 449 40 439 0 439 0 389 17 313 25 245 56 135 91 73 143 5 158 0 255 0</string>
+                <string>78 72 37 72 37 64 78 64 116 59 74 61 116 17 40 59 0 59 0 19</string>
                 <key>verticesUV</key>
-                <string>350 143 385 346 398 390 398 450 327 450 298 436 284 450 270 450 263 396 272 311 141 304 102 316 135 368 123 450 111 449 84 430 68 450 55 450 41 440 1 440 1 390 18 314 26 246 57 136 92 74 144 6 159 1 256 1</string>
+                <string>198 397 157 397 157 389 198 389 236 384 194 386 236 342 160 384 120 384 120 344</string>
             </dict>
-            <key>jetFire/jetFireLeft.png</key>
+            <key>deadFace.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-2,0}</string>
+                <key>spriteSize</key>
+                <string>{114,107}</string>
+                <key>spriteSourceSize</key>
+                <string>{120,107}</string>
+                <key>textureRect</key>
+                <string>{{371,305},{114,107}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>1 2 3 0 1 3 5 6 7 4 5 7 9 10 11 8 9 11</string>
+                <key>vertices</key>
+                <string>91 107 25 107 25 98 91 98 115 30 78 30 78 0 115 0 38 30 1 30 1 0 38 0</string>
+                <key>verticesUV</key>
+                <string>461 412 395 412 395 403 461 403 485 335 448 335 448 305 485 305 408 335 371 335 371 305 408 305</string>
+            </dict>
+            <key>happyFace.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-2.5,17.5}</string>
+                <key>spriteSize</key>
+                <string>{91,66}</string>
+                <key>spriteSourceSize</key>
+                <string>{120,107}</string>
+                <key>textureRect</key>
+                <string>{{1,1},{91,66}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>0 1 2 4 5 6 3 4 6 8 9 10 7 8 10</string>
+                <key>vertices</key>
+                <string>63 69 28 43 76 43 27 42 12 42 12 3 26 3 103 42 89 42 89 3 103 3</string>
+                <key>verticesUV</key>
+                <string>52 67 17 41 65 41 16 40 1 40 1 1 15 1 92 40 78 40 78 1 92 1</string>
+            </dict>
+            <key>jetFireLeft.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -36,7 +78,7 @@
                 <key>spriteSourceSize</key>
                 <string>{126,126}</string>
                 <key>textureRect</key>
-                <string>{{131,738},{126,126}}</string>
+                <string>{{322,1},{126,126}}</string>
                 <key>textureRotated</key>
                 <false/>
                 <key>triangles</key>
@@ -44,9 +86,9 @@
                 <key>vertices</key>
                 <string>126 41 126 93 122 126 110 125 84 105 67 126 54 126 40 116 0 116 0 65 22 7 36 0 106 0</string>
                 <key>verticesUV</key>
-                <string>257 779 257 831 253 864 241 863 215 843 198 864 185 864 171 854 131 854 131 803 153 745 167 738 237 738</string>
+                <string>448 42 448 94 444 127 432 126 406 106 389 127 376 127 362 117 322 117 322 66 344 8 358 1 428 1</string>
             </dict>
-            <key>jetFire/jetFireRight.png</key>
+            <key>jetFireRight.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -57,7 +99,7 @@
                 <key>spriteSourceSize</key>
                 <string>{126,126}</string>
                 <key>textureRect</key>
-                <string>{{1,790},{126,126}}</string>
+                <string>{{356,136},{126,126}}</string>
                 <key>textureRotated</key>
                 <false/>
                 <key>triangles</key>
@@ -65,9 +107,9 @@
                 <key>vertices</key>
                 <string>103 7 126 65 126 116 72 126 59 126 45 111 15 125 4 126 0 93 0 28 28 0 93 0</string>
                 <key>verticesUV</key>
-                <string>104 797 127 855 127 906 73 916 60 916 46 901 16 915 5 916 1 883 1 818 29 790 94 790</string>
+                <string>459 143 482 201 482 252 428 262 415 262 401 247 371 261 360 262 356 229 356 164 384 136 449 136</string>
             </dict>
-            <key>still/metalzond.png</key>
+            <key>playerBody.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -78,7 +120,7 @@
                 <key>spriteSourceSize</key>
                 <string>{369,361}</string>
                 <key>textureRect</key>
-                <string>{{11,427},{369,361}}</string>
+                <string>{{1,1},{369,361}}</string>
                 <key>textureRotated</key>
                 <false/>
                 <key>triangles</key>
@@ -86,7 +128,70 @@
                 <key>vertices</key>
                 <string>329 133 347 204 369 343 369 361 249 361 268 311 126 303 86 313 114 359 105 361 0 361 0 343 11 245 42 135 77 73 129 5 144 0 241 0</string>
                 <key>verticesUV</key>
-                <string>340 560 358 631 380 770 380 788 260 788 279 738 137 730 97 740 125 786 116 788 11 788 11 770 22 672 53 562 88 500 140 432 155 427 252 427</string>
+                <string>330 134 348 205 370 344 370 362 250 362 269 312 127 304 87 314 115 360 106 362 1 362 1 344 12 246 43 136 78 74 130 6 145 1 242 1</string>
+            </dict>
+            <key>satisfiedFace.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-1,7}</string>
+                <key>spriteSize</key>
+                <string>{114,61}</string>
+                <key>spriteSourceSize</key>
+                <string>{120,107}</string>
+                <key>textureRect</key>
+                <string>{{142,308},{114,61}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>0 3 4 0 4 5 1 2 3 0 1 3 0 5 6</string>
+                <key>vertices</key>
+                <string>61 37 97 21 116 47 88 48 61 77 2 47 2 16</string>
+                <key>verticesUV</key>
+                <string>201 329 237 313 256 339 228 340 201 369 142 339 142 308</string>
+            </dict>
+            <key>scaredFace.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,9}</string>
+                <key>spriteSize</key>
+                <string>{120,51}</string>
+                <key>spriteSourceSize</key>
+                <string>{120,107}</string>
+                <key>textureRect</key>
+                <string>{{329,349},{120,51}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>4 5 6 3 4 6 0 1 2 0 2 3 6 0 3 8 9 10 7 8 10</string>
+                <key>vertices</key>
+                <string>63 59 94 59 94 69 4 70 0 55 0 39 15 35 120 48 102 48 102 19 120 19</string>
+                <key>verticesUV</key>
+                <string>392 389 423 389 423 399 333 400 329 385 329 369 344 365 449 378 431 378 431 349 449 349</string>
+            </dict>
+            <key>surprisedFace.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-2,0}</string>
+                <key>spriteSize</key>
+                <string>{116,107}</string>
+                <key>spriteSourceSize</key>
+                <string>{120,107}</string>
+                <key>textureRect</key>
+                <string>{{366,266},{116,107}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>1 2 3 0 1 3 5 6 7 4 5 7 9 10 11 8 9 11</string>
+                <key>vertices</key>
+                <string>63 107 31 107 31 75 63 75 116 37 77 37 77 0 116 0 39 37 0 37 0 0 39 0</string>
+                <key>verticesUV</key>
+                <string>429 373 397 373 397 341 429 341 482 303 443 303 443 266 482 266 405 303 366 303 366 266 405 266</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -100,9 +205,9 @@
             <key>realTextureFileName</key>
             <string>player.png</string>
             <key>size</key>
-            <string>{399,917}</string>
+            <string>{486,413}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:f215283cf48cfebc1d2a11f22064b9e9:56c00e692350b63f8c7c306aab03578e:edc07151e736b0732633ae99adf9ba18$</string>
+            <string>$TexturePacker:SmartUpdate:f908fc06e1dc694ea8bfc196f76267cc:80946cd7d098f38820581a765e49f469:edc07151e736b0732633ae99adf9ba18$</string>
             <key>textureFileName</key>
             <string>player.png</string>
         </dict>
