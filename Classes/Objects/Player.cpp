@@ -12,7 +12,6 @@
 
 Player::Player(cocos2d::Size visibleSize)  {
     auto spriteCache = SpriteFrameCache::getInstance();
-    spriteCache->addSpriteFramesWithFile("player.plist");
     auto playerStillFrame = spriteCache->getSpriteFrameByName("playerBody.png");
     playerSprite = Sprite::createWithSpriteFrame(playerStillFrame);
 

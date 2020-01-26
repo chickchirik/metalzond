@@ -33,10 +33,6 @@ bool GameLayer::init() {
     wall->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
     this->addChild(wall);
 
-// Load shapes
-    auto shapeCache = PhysicsShapeCache::getInstance();
-    shapeCache->addShapesWithFile("res/metalzondBody.plist");
-
     player = new Player(visibleSize);
     this->addChild(player->getSprite());
     //freeing memoray allocated for the player object

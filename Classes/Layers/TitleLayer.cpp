@@ -29,7 +29,11 @@ bool TitleLayer::init() {
 }
 
 void TitleLayer::onEnterTransitionDidFinish() {
-    // game assets here loading will be here
+    // game assets are loaded here
+    auto spriteCache = SpriteFrameCache::getInstance();
+    auto shapeCache = PhysicsShapeCache::getInstance();
+    spriteCache->addSpriteFramesWithFile("player.plist");
+    shapeCache->addShapesWithFile("res/metalzondBody.plist");
     this->scheduleOnce([&](float d){
         auto nextScene  = GameLayer::createScene();
         auto transition = TransitionFade::create(1.0f, nextScene);
