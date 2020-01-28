@@ -20,7 +20,7 @@ Player::Player(cocos2d::Size visibleSize)  {
     playerSprite->setScale(0.5);
 
     auto shapeCache = PhysicsShapeCache::getInstance();
-    shapeCache->setBodyOnSprite("metalzond", playerSprite);
+    shapeCache->setBodyOnSprite("playerBody", playerSprite);
 }
 
 Player::~Player() {}
