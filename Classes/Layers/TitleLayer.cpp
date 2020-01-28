@@ -34,6 +34,7 @@ void TitleLayer::onEnterTransitionDidFinish() {
     auto shapeCache = PhysicsShapeCache::getInstance();
     spriteCache->addSpriteFramesWithFile("player.plist");
     shapeCache->addShapesWithFile("res/metalzondBody.plist");
+    Sprite::create("gameBG.png");
     this->scheduleOnce([&](float d){
         auto nextScene  = GameLayer::createScene();
         auto transition = TransitionFade::create(1.0f, nextScene);

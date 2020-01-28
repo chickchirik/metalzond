@@ -33,6 +33,11 @@ bool GameLayer::init() {
     wall->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
     this->addChild(wall);
 
+    //Image will be returned instantly because file was loaded previously
+    auto bgSprite = Sprite::create("gameBG.png");
+    bgSprite->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
+    this->addChild(bgSprite);
+
     player = new Player(visibleSize);
     this->addChild(player->getSprite());
     //freeing memoray allocated for the player object
