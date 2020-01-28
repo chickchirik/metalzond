@@ -40,7 +40,7 @@
                         <key>restitution</key>
                         <real>0</real>
                         <key>friction</key>
-                        <real>150</real>
+                        <real>0.2</real>
                         <key>tag</key>
                         <integer>0</integer>
                         <key>group</key>
