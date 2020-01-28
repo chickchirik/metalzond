@@ -30,8 +30,9 @@ void Player::fireJet(const Vec2& touchLocation) {
     auto playerSize = playerSprite->getContentSize();
     auto body = playerSprite->getPhysicsBody();
     if (touchLocation.x < visibleSize.width / 2) {
-        body->applyImpulse(Vec2(-1, 10000));    //temporary
+        body->applyImpulse(Vec2(100, 1500), Vec2(-playerSize.width, -playerSize.height));
     } else {
-        body->applyImpulse(Vec2(1, 10000));     //temporary
+        body->applyImpulse(Vec2(-100, 1500), Vec2(playerSize.width, -playerSize.height));
     }
+    body->applyImpulse(Vec2(-1, 9500));
 }
