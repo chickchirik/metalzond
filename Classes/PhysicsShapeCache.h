@@ -111,7 +111,7 @@ private:
     class Polygon
     {
     public:
-        Point* vertices;
+        cocos2d::Point* vertices;
         int numVertices;
     };
 
@@ -132,7 +132,7 @@ private:
         int contactTestMask;
 
         // for circles
-        Point center;
+        cocos2d::Point center;
         float radius;
 
 
@@ -143,7 +143,7 @@ private:
     class BodyDef
     {
     public:
-        Point anchorPoint;
+        cocos2d::Point anchorPoint;
         std::vector<FixtureData *> fixtures;
 
         bool isDynamic;
