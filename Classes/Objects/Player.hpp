@@ -18,10 +18,10 @@ USING_NS_CC;
 class Player {
 private:
     Sprite* playerSprite = nullptr;
+    void fireJet(const Vec2& touchLocation);
 public:
     Player(cocos2d::Size visibleSize);
     ~Player();
     inline Sprite* getSprite() { return playerSprite; }
-    void fireJet(const Vec2& touchLocation);
     void update(const Vec2& touchLocation);
 };
