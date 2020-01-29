@@ -36,3 +36,9 @@ void Player::fireJet(const Vec2& touchLocation) {
     }
     body->applyImpulse(Vec2(-1, 9500));
 }
+
+void Player::update(const Vec2& touchLocation) {
+    if (touchLocation != Vec2::ZERO) {
+        this->fireJet(touchLocation);
+    }
+}

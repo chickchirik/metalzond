@@ -23,4 +23,5 @@ public:
     ~Player();
     inline Sprite* getSprite() { return playerSprite; }
     void fireJet(const Vec2& touchLocation);
+    void update(const Vec2& touchLocation);
 };
