@@ -19,7 +19,6 @@ USING_NS_CC;
 class GameLayer : public cocos2d::Layer {
 private:
     Player* player = nullptr;
-    bool isPressed = false;
     Vec2 touchLocation = Vec2::ZERO;
 public:
     static Scene* createScene();

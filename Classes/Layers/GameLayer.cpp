@@ -56,16 +56,13 @@ bool GameLayer::init() {
 
 bool GameLayer::onTouchBegan(Touch *touch, Event *event) {
     touchLocation = touch->getLocation();
-    isPressed = true;
     return true;
 }
 
 void GameLayer::onTouchEnded(Touch *touch, Event *event) {
-    isPressed = false;
+    touchLocation = Vec2::ZERO;
 }
 
 void GameLayer::update (float delta) {
-    if (isPressed) {
-        player->fireJet(touchLocation);
-    }
+    player->update(touchLocation);
 }
