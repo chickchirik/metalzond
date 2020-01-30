@@ -26,6 +26,7 @@ Player::Player(cocos2d::Size visibleSize)  {
 Player::~Player() {}
 
 void Player::handleInput(const Vec2& touchLocation) {
+    if (touchLocation == Vec2::ZERO) { return; }
     auto visibleSize = Director::getInstance()->getVisibleSize();
     auto playerSize = playerSprite->getContentSize();
     auto body = playerSprite->getPhysicsBody();
@@ -38,7 +39,5 @@ void Player::handleInput(const Vec2& touchLocation) {
 }
 
 void Player::update(const Vec2& touchLocation) {
-    if (touchLocation != Vec2::ZERO) {
-        this->handleInput(touchLocation);
-    }
+    this->handleInput(touchLocation);
 }
