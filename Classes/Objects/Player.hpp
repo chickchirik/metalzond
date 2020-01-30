@@ -18,7 +18,7 @@ USING_NS_CC;
 class Player {
 private:
     Sprite* playerSprite = nullptr;
-    void fireJet(const Vec2& touchLocation);
+    void handleInput(const Vec2& touchLocation);
 public:
     Player(cocos2d::Size visibleSize);
     ~Player();
