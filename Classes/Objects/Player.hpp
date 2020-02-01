@@ -20,6 +20,8 @@ class Player {
 private:
     std::string currEmotion = "happyFace";
     Sprite* playerSprite = nullptr;
+    uint8_t fullHealth = 100;
+    uint8_t health = 100;
     void handleInput(const Vec2& touchLocation);
 public:
     Player(cocos2d::Size visibleSize);
