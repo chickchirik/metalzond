@@ -46,14 +46,20 @@ Player::Player(cocos2d::Size visibleSize)  {
 Player::~Player() {}
 
 void Player::handleInput(const Vec2& touchLocation) {
-    if (touchLocation == Vec2::ZERO) { return; }
+    if (touchLocation == Vec2::ZERO) {
+        playerSprite->getChildByName("jetFireLeft")->setVisible(false);
+        playerSprite->getChildByName("jetFireRight")->setVisible(false);
+        return;
+    }
     auto visibleSize = Director::getInstance()->getVisibleSize();
     auto playerSize = playerSprite->getContentSize();
     auto body = playerSprite->getPhysicsBody();
     if (touchLocation.x < visibleSize.width / 2) {
         body->applyImpulse(Vec2(100, 1500), Vec2(-playerSize.width, -playerSize.height));
+        playerSprite->getChildByName("jetFireLeft")->setVisible(true);
     } else {
         body->applyImpulse(Vec2(-100, 1500), Vec2(playerSize.width, -playerSize.height));
+        playerSprite->getChildByName("jetFireRight")->setVisible(true);
     }
     body->applyImpulse(Vec2(-1, 9500));
 }
