@@ -12,11 +12,13 @@
 
 #include "cocos2d.h"
 #include "PhysicsShapeCache.h"
+#include <string>
 
 USING_NS_CC;
 
 class Player {
 private:
+    std::string currEmotion = "happyFace";
     Sprite* playerSprite = nullptr;
     void handleInput(const Vec2& touchLocation);
 public:

@@ -21,6 +21,26 @@ Player::Player(cocos2d::Size visibleSize)  {
 
     auto shapeCache = PhysicsShapeCache::getInstance();
     shapeCache->setBodyOnSprite("playerBody", playerSprite);
+
+    for (auto spriteEntry : spriteCache->getSpriteFrames()) {
+        std::string spriteFileName = spriteEntry.first;
+        std::string spriteName = spriteFileName.substr(0, spriteFileName.rfind("."));
+        auto newSprite = Sprite::createWithSpriteFrame(spriteEntry.second);
+        auto newSpriteSize = newSprite->getContentSize();
+        newSprite->setVisible(false);
+        if (spriteName.find("Left") != -1) {
+            newSprite->setPosition(Vec2(newSpriteSize.width / 2.5, -newSpriteSize.height / 5));
+            playerSprite->addChild(newSprite, -1, spriteName);
+        } else if (spriteName.find("Right") != -1) {
+            newSprite->setPosition(Vec2(playerSize.width - newSpriteSize.width / 2.5, -newSpriteSize.height / 5));
+            playerSprite->addChild(newSprite, -1, spriteName);
+        } else {
+            newSprite->setPosition(Vec2(playerSize.width / 2, playerSize.height / 2.5));
+            newSprite->setScale(1.5);
+            playerSprite->addChild(newSprite, 1, spriteName);
+        }
+    }
+    playerSprite->getChildByName("happyFace")->setVisible(true);
 }
 
 Player::~Player() {}
