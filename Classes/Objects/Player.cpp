@@ -64,6 +64,15 @@ void Player::handleInput(const Vec2& touchLocation) {
     body->applyImpulse(Vec2(-1, 9500));
 }
 
+void Player::processState() {
+    std::string prevEmotion = currEmotion;
+    currEmotion = "happyFace";
+    if (health < fullHealth*0.5) { currEmotion = "scaredFace"; }
+    playerSprite->getChildByName(prevEmotion)->setVisible(false);
+    playerSprite->getChildByName(currEmotion)->setVisible(true);
+}
+
 void Player::update(const Vec2& touchLocation) {
     this->handleInput(touchLocation);
+    this->processState();
 }

@@ -23,6 +23,7 @@ private:
     uint8_t fullHealth = 100;
     uint8_t health = 100;
     void handleInput(const Vec2& touchLocation);
+    void processState();
 public:
     Player(cocos2d::Size visibleSize);
     ~Player();
