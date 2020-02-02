@@ -13,6 +13,7 @@
 #include "cocos2d.h"
 #include "PhysicsShapeCache.h"
 #include <string>
+#include <cmath>
 
 USING_NS_CC;
 

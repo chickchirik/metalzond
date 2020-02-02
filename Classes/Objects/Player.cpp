@@ -68,6 +68,9 @@ void Player::processState() {
     std::string prevEmotion = currEmotion;
     currEmotion = "happyFace";
     if (health < fullHealth*0.5) { currEmotion = "scaredFace"; }
+    float playerRotation = (-playerSprite->getPhysicsBody()->getRotation() + 90) * M_PI / 180.0;
+    float sineValue = std::sin(playerRotation);
+    if (sineValue >= -1 && sineValue <= 0) { currEmotion = "surprisedFace"; }
     playerSprite->getChildByName(prevEmotion)->setVisible(false);
     playerSprite->getChildByName(currEmotion)->setVisible(true);
 }
