@@ -10,13 +10,13 @@
 
 #include "Player.hpp"
 
-Player::Player(cocos2d::Size visibleSize)  {
+Player::Player(cocos2d::Size visibleSize, const Vec2& origin)  {
     auto spriteCache = SpriteFrameCache::getInstance();
     auto playerStillFrame = spriteCache->getSpriteFrameByName("playerBody.png");
     playerSprite = Sprite::createWithSpriteFrame(playerStillFrame);
 
     auto playerSize = playerSprite->getContentSize();
-    playerSprite->setPosition(Vec2(visibleSize.width / 2, visibleSize.height - playerSize.height));
+    playerSprite->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height - playerSize.height + origin.y));
     playerSprite->setScale(0.5);
 
     auto shapeCache = PhysicsShapeCache::getInstance();

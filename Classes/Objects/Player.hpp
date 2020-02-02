@@ -26,7 +26,7 @@ private:
     void handleInput(const Vec2& touchLocation);
     void processState();
 public:
-    Player(cocos2d::Size visibleSize);
+    Player(cocos2d::Size visibleSize, const Vec2& origin);
     ~Player();
     inline Sprite* getSprite() { return playerSprite; }
     void update(const Vec2& touchLocation);

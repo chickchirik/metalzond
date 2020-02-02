@@ -38,7 +38,7 @@ bool GameLayer::init() {
     bgSprite->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
     this->addChild(bgSprite);
 
-    player = new Player(visibleSize);
+    player = new Player(visibleSize, origin);
     this->addChild(player->getSprite());
     //freeing memoray allocated for the player object
     this->setOnExitCallback([&](){
