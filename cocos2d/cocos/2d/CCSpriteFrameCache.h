@@ -271,6 +271,8 @@ public:
      * @return The sprite frame.
      */
     SpriteFrame* getSpriteFrameByName(const std::string& name);
+
+    /*  custom sprite frames getter by chickchirik  */
     inline Map<std::string, SpriteFrame*>& getSpriteFrames() { return _spriteFramesCache.getSpriteFrames();}
 
     bool reloadTexture(const std::string& plist);
